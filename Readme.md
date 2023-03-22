@@ -1,3 +1,3 @@
 # tickticktick
 
-A simple time viewer with seconds on wallpaper built in rust.
+A simple live time wallpaper built using rust.
