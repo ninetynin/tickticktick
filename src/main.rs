@@ -1,3 +1,5 @@
+#![allow(warnings)]
+
 use image::{Rgb, RgbImage};
 use imageproc::drawing::{draw_text_mut, text_size};
 use rusttype::{Font, Scale};
@@ -13,7 +15,7 @@ fn main() {
     // let path = pdir.data_dir().join("wallpaper.png");
     // BEST USE CASE _> BLACK BACKGROUND
     // let curr_wall: String = wallpaper::get().unwrap();
-    let path = Path::new("F:\\GITHUB REPOS\\ninetynin\\tickticktick\\assets\\sample.png");
+    let mut path = Path::new("F:\\GITHUB REPOS\\ninetynin\\tickticktick\\assets\\sample.png");
 
     let mut image = RgbImage::new(1920, 1080);
     for pixel in image.pixels_mut() {
@@ -41,13 +43,14 @@ fn main() {
         draw_text_mut(
             &mut image,
             Rgb([255u8, 255u8, 255u8]),
-            600,
-            400,
+            350,
+            450,
             scale,
             &font,
             text.as_str(),
         );
-        let _ = image.save(path.clone()).unwrap();
+        // let _ = image.save(path.clone()).unwrap();
+        let _ = image.save(&path).unwrap();
         wallpaper::set_from_path(path.to_str().unwrap()).unwrap();
     }
     // let (w, h) = text_size(scale, &font, text);
