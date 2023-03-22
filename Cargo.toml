@@ -1,0 +1,15 @@
+[package]
+name = "tickticktick"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+wallpaper = { version = "3.2.0", features = ["from_url"] }
+imageproc = "0.23.0"
+image = "0.24.5"
+rusttype = "0.9.3"
+directories = "5.0.0"
+# time = "0.3.20"
+time = { version = "0.3.20", features = ["local-offset"] }
