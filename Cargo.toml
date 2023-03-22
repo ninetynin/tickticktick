@@ -11,5 +11,4 @@ imageproc = "0.23.0"
 image = "0.24.5"
 rusttype = "0.9.3"
 directories = "5.0.0"
-# time = "0.3.20"
-time = { version = "0.3.20", features = ["local-offset"] }
+chrono = "0.4.24"
