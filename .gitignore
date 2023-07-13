@@ -9,3 +9,8 @@
 
 # ignore temp dirs
 /temp/
+
+# ingore windows build files for exe gen local
+/build/
+/dist/
+main.spec
