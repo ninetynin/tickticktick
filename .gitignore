@@ -1,0 +1,11 @@
+# compiled Python files
+*.pyc
+
+# virtual env dir
+/myenv/
+
+# log files
+*.log
+
+# ignore temp dirs
+/temp/
